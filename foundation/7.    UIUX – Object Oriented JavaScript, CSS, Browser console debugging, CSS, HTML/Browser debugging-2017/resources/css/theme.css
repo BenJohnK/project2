@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+img,.reveal section img{border:none;background:none;box-shadow:none}
+.textcolor{color:#13daec}
+i.fa{color:#13daec;}
+pre{box-shadow:none !important}
+
+ul li{font-size:24px !important;font-weight:200 !important;list-style:none !important;}
+ul li span.bullet{background:url(../bulletes.png) center bottom no-repeat;background-size:100%;width:24px;height:24px;display:inline-block;margin-right:10px;}
+.reveal pre{ font-size:1em; line-height:1.3em; width:100%}
+.reveal pre code{ max-height:500px;}
+.inline{ background:none !important}
+ul li span.bullet{ width:14px; height:14px}
+.reveal p{ text-align:left}
+.reveal ol, .reveal ul{ margin:0 0 0 0;}
+ul li{ font-size:30px !important;}
+.leftcontainer{ float:left; width:50%}
+.disctype ul li{ list-style-type:disc !important; list-style:circle !important}
+.disctype ol li{ list-style:upper-roman !important}

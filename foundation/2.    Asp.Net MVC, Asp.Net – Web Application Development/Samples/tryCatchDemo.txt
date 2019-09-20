@@ -1,0 +1,22 @@
+using System;
+using System.IO;
+
+class tryCatchDemo
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+            File.OpenRead("NonExistentFile");
+        }
+        catch(FileNotFoundException fnfex)
+        {
+            Console.WriteLine(fnfex.ToString());
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
+		
+    }
+}

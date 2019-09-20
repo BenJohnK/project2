@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Sample Page</title>
+    <style>
+    body {
+        padding: 0;
+        margin: 0;
+        color: #ccc;
+    }
+    
+    .wrapper1 {
+        background-color: #000;
+        float: left;
+        width: 100%;
+    }
+    
+    .container {
+        padding-top: 20px;
+        width: 960px;
+        margin: 0 auto;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .one_quarter {
+        width: 220px;
+        float:left;
+        margin-right: 20px;
+    }
+    .clearfix:after{
+      content: "";
+      display: table;
+      clear: both;   
+    }
+    .last
+    {
+      margin-right: 0px;
+    }
+    .colLeft
+    {
+        float:left;
+    }
+    .colLeft ul
+    {
+        padding:0;
+    }
+    .colLeft ul li
+    {
+        list-style-type: none;
+        display: block;
+    }
+    .colRight
+    {
+        float:right;
+    }
+    .colRight ul
+    {
+        padding:0;
+    }
+    .colRight ul li{
+        display: block;
+        padding: 10px;
+
+    }
+    footer
+    {
+        width:960px;
+        margin:0 auto;
+    }
+    .gapRight
+    {
+        margin-right: 20px;
+    }
+    .colRight ul li a{outline: none;text-decoration: none;list-style-type: circle;}
+    section #slider {}
+    
+    header {
+        width: 960px;
+        margin: 0 auto;
+    }
+.innerDiv{width:357px;float:left;}
+    .logoSec {
+        float: left;
+    }
+    .wrapper2
+    {
+        background-color: #000;
+        height:50px;
+    }
+    nav {
+        float: right;
+        padding-top: 20px;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper1">
+        <header>
+            <div class="logoSec">
+                <h1>Logo</h1>
+                <p>tag line here</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Testmonials</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container clear">
+        <section>
+            <div id="slider">
+                <img src="https://dancing-bear-tours.com/wp-content/uploads/2015/02/Landing-Page-4-background-2-960px.jpg" />
+            </div>
+        </section>
+        <section class="clearfix"> 
+            <article class="one_quarter">
+                <h3>Title1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            </article>
+            <article class="one_quarter">
+                <h3>Title1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            </article>
+            <article class="one_quarter">
+                <h3>Title1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            </article>
+            <article class="one_quarter last">
+                <h3>Title1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            </article>
+        </section>
+        <hr> 
+        <section class="clearfix">
+           <div class="colLeft">
+          <ul>
+             <li>
+                 <article class="clearfix">
+                     <div class="innerDiv gapRight">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                     </div>
+                     <div class="innerDiv">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                     </div>
+                 </article>
+             </li>
+             <li>
+                 <article class="clearfix">
+                     <div class="innerDiv gapRight">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                     </div>
+                     <div class="innerDiv">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
+                     </div>
+                 </article>
+             </li>
+          </ul>
+              
+           </div>
+           <aside class="colRight">
+            <h3>Categories</h3>  
+            <ul>
+                <li><a href="">Category link1</a></li>
+                <li><a href="">Category link2</a></li>
+                <li><a href="">Category link3</a></li>
+                <li><a href="">Category link4</a></li>
+                <li><a href="">Category link5</a></li>
+            </ul>
+           </aside>
+        </section>  
+    </div>
+    <div class="wrapper2">
+        <footer>
+            <p style="float:left">Copyright © 2012 - All Rights Reserved - Domain Name</p>
+            <p style="float:right">lorem ipsum</p>
+        </footer>
+    </div>
+</body>
+
+</html>

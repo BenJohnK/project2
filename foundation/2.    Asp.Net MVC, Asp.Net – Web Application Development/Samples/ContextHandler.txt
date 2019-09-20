@@ -1,0 +1,34 @@
+private void Button1_Click(object sender,System.EventArgs e)
+{
+	Server.Transfer("ContextChild.aspx");
+}
+
+internal Hashtable Value
+{
+	get
+	{
+		Hashtable objHT = new Hashtable();
+		objHT["Name"]=TextBox1.Text;
+		objHT["FathersName"]= TextBox2.Text;
+		objHT["Address"] = TextBox3.Text;
+		return objHT;
+	}
+}
+
+private void Page_Load(object sender, System.EventArgs e)
+{
+	// Put user code to initialize the page here
+	Hashtable objHT = new Hashtable(); 
+	if(!IsPostBack)
+	{
+		ContextParent ParentPage;
+		ParentPage = (ContextParent)Context.Handler;
+		objHT = ParentPage.Value;
+		Response.Write("<br><br>");
+		foreach(DictionaryEntry di in objHT)
+		{
+			Response.Write(di.Key +" : "+di.Value);
+			Response.Write("<br>");
+		}
+	}
+}

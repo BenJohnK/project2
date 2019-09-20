@@ -1,0 +1,36 @@
+
+  
+Example 1: 
+  
+        HttpCookie userInfo = new HttpCookie("userInfo");
+        userInfo["UserName"] = "Annathurai";
+        userInfo["UserColor"] = "Black";
+        userInfo.Expires.Add(new TimeSpan(0, 1, 0));
+        Response.Cookies.Add(userInfo);
+
+Example 2: 
+  
+        Response.Cookies["userName"].Value = "Annathurai";
+        Response.Cookies["userColor"].Value = "Black";
+                        
+
+  
+Example 1: 
+  
+         string User_name = string.Empty;
+        string User_color = string.Empty;
+        HttpCookie reqCookies = Request.Cookies["userInfo"];
+        if (reqCookies != null)
+        {
+            User_name = reqCookies["UserName"].ToString();
+            User_color = reqCookies["UserColor"].ToString();
+        }
+
+Example 2: 
+  
+      
+  
+   string User_Name = string.Empty;
+        string User_Color = string.Empty;
+        User_Name = Request.Cookies["userName"].Value;
+        User_Color = Request.Cookies["userColor"].Value;

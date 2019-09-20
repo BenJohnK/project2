@@ -1,0 +1,26 @@
+1. Create a Class Library - Business Logic.
+
+2. Create a class Library - Repository (Data Access Layer)
+
+3. Create DataBase, Table, Insert Values. (eg: Currency Values)
+
+4. Create a method in Repository to read the value from DB.(Use ADO.NET or EntityFramework or Linq to SQL)
+
+5. Add Referece of Repository Project to Business Logic Project.
+
+6. Write a method in Business Logic. 
+	a. Call the method written in Repository (step 4) to get the value from DB. 
+	b. Implement your Businees Logic. (eg Do currency conversion by using the input parameter and Database value)
+	c. Return the out put.
+
+7. Create Test Project (Integration)
+
+8. Add reference to Business Logic and Repository projects.
+
+9. Create Test Method. Call the method from Business Logic. Check the values using Assertion.
+
+
+
+
+
+

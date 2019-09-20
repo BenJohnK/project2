@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" type="text/css" href="resources/css/theme.css" id="Custom-Theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    </head>
+
+    <body>
+<div class="reveal"> 
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+    <section> <img src="resources/main-logo.png" /> </section>
+    <section>
+          <h2>Inroduction to Html</h2>
+    </section>
+    
+    <!-- Example of nested vertical slides -->
+ <!--1stslide start-------------------------------------------------------------------------->
+    <section>
+          <section>
+        <h2>What is HTML?</h2>
+        
+      </section>
+          <section data-background="#007777">
+          <ul>
+          <li>
+          <p><h3>HTML is a language for describing web pages.</h3></p></li>
+        <ul>
+        		
+              <li><span class="bullet"></span>Stands for Hyper Text Markup Language </li>
+              <li><span class="bullet"></span>Describes the structure of Web pages using markup</li>
+              </ul>
+            </ul>
+      </section>
+ <!--1stslide end-------------------------------------------------------------------------->
+ <!--2nd slide start-------------------------------------------------------------------------->
+        </section>
+         
+   
+    
+   <!--2nd slide end-------------------------------------------------------------------------->
+   <!--3rd slide start-------------------------------------------------------------------------->
+    	<section>
+          <h2>Elements
+</h2>
+          <ul>
+        <li><span class="bullet"></span>Written with a start tag and an end tag, with the content in between:<br/>
+              <br/>
+              <pre><code><tagname>content</tagname></code></pre>
+            </li>
+        <br>
+        <li><span class="bullet"></span>Elements with no content are called empty elements.<br/>
+              <br/>
+              <pre><code><br />,<img/>,<hr></code></pre>
+            </li>
+      </ul>
+      </section>
+       <section>
+          <h2>A Simple HTML Document</h2>
+          <p><img src="Untitled-1-Recovered.png"></p>
+        </section>
+<!--- attributes-->
+    <section>
+          <h2>Attributes
+</h2>
+          <ul>
+        <li><span class="bullet"></span>All HTML elements can have attributes.
+              <br/>
+              
+            </li>
+        <br>
+        <li><span class="bullet"></span>Attributes provide additional information about an element<br/>
+              <br/>
+              
+            </li>
+        <li><span class="bullet"></span>Attributes are always specified in the start tag<br/>
+              <br/>
+              
+            </li>
+            <li><span class="bullet"></span>Attributes usually come in name/value pairs like: name="value"<br/>
+              <br/>
+              <pre><code><a href="https://www.w3schools.com">This is a link</a></code></pre>
+            </li>    
+      </ul>
+      </section>
+ <section>
+          <h2>Attributes used in HTML:</h2>
+         <p><img src="resources/attributes1.png"></p>
+        </section>
+  <!--3rd1st slide start-------------------------------------------------------------------------->
+      <section data-background="#007777">
+          <h3>Inline Elements</h3>
+          <p> Normally displayed without line breaks.</p>
+          <p style="color:#CCC">&nbsp;&nbsp Inline elements are :</p>
+          <pre ><code class="inline">
+    <b>content</b>
+    <i>Italic text</i>
+    <small>small text</small>
+    <code>Computer codes</code>
+    <strong>Strong emphasis</strong>
+    <a>Anchor</a>
+    <br/>Line Break
+    <img>Inline image
+</code></pre>
+        </section>
+ <!--3rd1st slide end-------------------------------------------------------------------------->
+ <!--3rd 2nd slide start-------------------------------------------------------------------------->
+        <section data-background="#007777">
+          <h3>Block Elements</h3>
+          <p>Start with a new line, when displayed in a browser.
+</p>
+          <ul>
+        <li><span class="bullet"></span>The general purpose div container<br/>
+             
+             
+            </li>
+        
+        <li><span class="bullet"></span>Header elements, h1, h2, h3,h4,h5,h6<br/>
+            
+              
+            </li>
+            <li><span class="bullet"></span> Paragraph elements</li>
+            <li><span class="bullet"></span> Table elements</li>
+            <li><span class="bullet"></span> Form elements</li>
+             <li><span class="bullet"></span>List elements(Unordered List and Ordered List)</li>
+      </ul>
+        </section>
+        <!--3rd 2nd slide end-------------------------------------------------------------------------->
+        </section>
+   <!--3rdd slide end-------------------------------------------------------------------------->
+  
+   
+    <section>
+          <h2>Headings and Paragraphs</h2>
+          <ul>
+        <li><span class="bullet"></span>Six levels of headings</li><br>
+        <li><pre><code><h1></h1>,<h2></h2>,<h3></h3></code></pre>
+</li>
+<li><pre><code><h4></h4>, <h5></h5>,<h6></h6></code></pre></li><br>
+<li><span class="bullet"></span>"p" tag structure your text into different paragraphs.
+</li><br>
+        <li><pre><code><p></p></code></pre>
+</li>
+        
+      </ul>
+        </section>
+    <section>
+          <h2>Styles</h2>
+          <ul>
+        <li><span class="bullet"></span>Every HTML element has a  default style  </li>
+	<ul>
+    <li>background color:white</li>
+    <li>text color :black</li>
+    <li>text-size :12px</li>
+    </ul>
+    <br>
+        <li><span class="bullet"></span>style attribute changes the default style of an HTML element.  
+</li>
+<li>Eg:<pre><code><h1 style="color:blue;background-color:white">Heading</h1></code></pre>
+<br>
+<li>Result:</li>
+<h1 style="color:blue;background-color:white;text-shadow:none">Heading</h1>
+</li>
+ </ul>
+        </section>
+    	<section>
+         <section>
+        	<h2>Formatting Elements</h2> 
+            <ul>
+            	<li><span class="bullet"></span>Formatting elements were designed to display special  types of text:</li><br>
+                <li>
+                	<div class="leftcontainer">
+                    	<ul>
+                        	<li>Bold</li>
+                            <li>Strong</li>
+                            <li>Subscripts </li>
+                            <li>Superscripts </li>
+                            <li>Italic</li>
+                            <li>Emphasis</li>
+                        </ul>
+                    </div>
+                    <div class="rightcontainer">
+                    	<ul>
+                        	<li>Small</li>
+                            <li>Mark</li>
+                            <li>Inserted </li>
+                            <li>Deleted</li>
+                            <li>Underlined</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            
+          </section>
+          <section  data-background="#007777">
+          <br>
+          <p><img src="resources/formating-elemts.png"></p>
+        </section>
+        </section>
+    <section>
+          <ul>
+          <li><h3>Comment tags</h3></li>
+          	<li><span class="bullet"></span>Used to insert comments in HTML.</li><br>
+            <pre><code><!-- Write your comments here -->
+</code></pre><br>
+<li><h3>CSS</h3></li>
+<li><span class="bullet"></span>Cascading  Style  Sheets</li><br>
+<li><span class="bullet"></span>Styling can be in 3 ways:</li><br>
+	<ul>
+    	<li>Inline - using a  style attribute  in HTML elements<li>
+        <li>Internal - using a  style element  in the HTML head section<li>
+        <li>External - using one or more  external CSS files<li>
+    </ul>
+          </ul>  
+        </section>
+    <section>
+          <ul>
+          <li><h3>Hyperlinks</h3></li>
+          	<li><span class="bullet"></span>You can click on a link and jump to another document.</li><br>
+            <pre><code><a  href="url" target="_blank">link text</a></code></pre><br>
+<li><h3>Image</h3></li>
+<li><span class="bullet"></span>Empty tag</li><br>
+<li><span class="bullet"></span>Contains attributes only</li><br>
+<li><span class="bullet"></span>Does not have a closing tag</li>
+<pre><code><img src="SCN0028.JPG" alt="photo"></code></pre>
+          </ul>
+        </section>
+    <section>
+          <h2>Tables</h2>
+         <ul>
+         <li><span class="bullet"></span> Defined with:</li><pre><code><table></table></code></pre>
+          <li><img src="resources/table.png"></li>
+</ul>
+
+        </section>
+    <section >
+    <section >
+          <h2>Lists</h2>
+          <ul>
+          	<li><span class="bullet"></span>Unordered  List</li><br>
+           <li><span class="bullet"></span>Ordered  List</li><br>
+            <li><span class="bullet"></span>Description List</li>
+
+          </ul>
+          </section>
+          <section data-background="#007777">
+          <h3>Unordered  List</h3>
+          	<pre><code class="inline"><ul>
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ul>
+</code></pre><br>
+<p>Result:</p>
+<ul>
+ <li><span class="bullet"></span>Apples</li>
+ <li><span class="bullet"></span>Bananas</li>
+ <li><span class="bullet"></span>Lemons</li>
+ <li><span class="bullet"></span>Oranges</li>
+</ul>
+          </section>
+          <section data-background="#007777" class="disctype">
+        <p><span class="bullet"></span>Style  attribute can be added to an  unordered list, to define the style of the marker:</p>
+        <pre><code class="inline"><ul style="list-style-type: circle">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ul> 
+</code></pre><br>
+<p>Result:</p>
+<ul style="list-style-type: circle">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ul> </section>
+<section data-background="#007777">
+<p><img src="resources/ul.png"></p>
+</section>  <section data-background="#007777">
+          <h3>Ordered  List</h3>
+          	<pre><code class="inline">
+    <ol>
+     <li>Apples</li>
+     <li>Bananas</li>
+     <li>Lemons</li>
+     </ol>
+</code></pre><br>
+<p>Result:</p>
+<ol>
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+</ol> 
+     </section>
+          <section data-background="#007777" class="disctype">
+        <p><span class="bullet"></span>A  type  attribute can be added to an  ordered list, to define the type of the marker:</p>
+        <pre><code class="inline">
+<ol type="I">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+</ol> 
+</code></pre><br>
+<p>Result:</p>
+<ol type="I">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ 
+</ol> 
+</section>
+<section data-background="#007777">
+<p><img src="resources/ol.png"></p>
+</section>
+<section data-background="#007777">
+          <h3>Description List</h3>
+          <p>List of terms, with a description of each term</p>
+          	<pre><code class="inline">
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+</code></pre><br>
+<ul><li><img src="resources/description.png"></li></ul>
+
+     </section>
+        </section>
+        		
+    <section>
+    <section>
+       <h2>Forms</h2> 
+       <ul>
+       		<li><span class="bullet"></span>Used to collect user input.</li>
+            	<ul>
+                	<li><pre><code><form>
+
+	form elements
+
+	</form>
+</code></pre></li>
+                </ul>
+            <li><span class="bullet"></span>Input  element is the most important  form element.</li>
+            <ul><li>
+            <pre><code><input></code></pre></li></ul>
+            <li><span class="bullet"></span>It has many variations, depending on the type attribute.</li>
+       </ul>
+       </section>
+       <section data-background="#007777">
+       	<p><img src="resources/input.png"></p>
+       </section> 
+       <section data-background="#007777">
+       		<h3>Text Input</h3>
+            <pre><code class="inline">
+<form>
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    </form></code></pre>
+    <form>
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+</form>
+       </section>
+       <section data-background="#007777">
+       		<h3>Radio Button Input</h3>
+            <pre><code class="inline" style="font-size:30px"><form>
+<input type="radio" name="sex" value="male" checked>Male
+<br>
+<input type="radio" name="sex" value="female">Female
+</form></code></pre>
+<form>
+<input type="radio" name="sex" value="male" checked>Male<span style="color:#007777">fe</span>
+<br>
+<input type="radio" name="sex" value="female">Female
+</form>
+       </section>
+       <section data-background="#007777">
+       		<h3>Submit Button</h3>
+            <pre><code class="inline" style="font-size:30px"><form>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+<input type="submit" value="Submit">
+</form></code></pre>
+<form>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+
+<input type="submit" value="Submit">
+</form>
+       </section>
+    </section>
+    <section>
+    <section>
+    <h3>Select Element (Drop-Down List)</h3>
+    <pre><code><form>
+    <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+    <input type="submit">
+</form></code></pre><br>
+<form>
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+<input type="submit">
+</form>
+</section>
+<section data-background="#007777">
+<ul>
+	<li><span class="bullet"></span>Option elements defines the options to select.</li><br>
+    <li><span class="bullet"></span>The list will normally show the first item as selected.</li><br>
+    <li><span class="bullet"></span>You can add a selected attribute to define a predefined option.</li><br>
+    <pre><code><option value="fiat" selected>Fiat</option></code></pre>
+    <form>
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat" selected>Fiat</option>
+<option value="audi">Audi</option>
+</select>
+<input type="submit">
+</form>
+</ul>
+	
+</section>
+    </section>
+    <section>
+    	<h3>Textarea Element</h3>
+        <ul>
+        	<li><span class="bullet"></span>Defines a multi-line input field (a text area):</li>
+            <pre><code>
+<form>
+    <textarea name="message" rows="10" cols="30"></textarea>
+    <br>
+    <input type="submit">
+</form>
+            </code></pre>
+            <li>
+            	<form>
+<textarea name="message" rows="10" cols="30"></textarea>
+<br><br>
+<input type="submit">
+</form>
+            </li>
+        </ul>
+    </section>
+
+<section>
+
+      <h2>What is New in HTML5?</h2>
+      <br/>
+      <br/>
+   
+      <ul>
+    <h4>Semantic Elements</h4>
+
+      <li><span class="bullet"></span>header</li>
+      <li><span class="bullet"></span>footer</li>
+      <li><span class="bullet"></span>nav</li>
+      <li><span class="bullet"></span>article</li>
+      <li><span class="bullet"></span>section</li>
+      <li><span class="bullet"></span>aside</li>
+
+      </ul>
+
+  <ul>
+
+
+    <h4>Form controls</h4>
+      <li><span class="bullet"></span>number</li>
+      <li><span class="bullet"></span>email</li>
+      <li><span class="bullet"></span>date</li>
+      <li><span class="bullet"></span>time</li>
+      <li><span class="bullet"></span>color</li>
+      
+
+      </ul>
+
+ <ul>
+ <h4>Graphic Elements</h4>
+      <li></span><pre><code><svg></code></pre></li>
+      <li><pre><code><canvas></code></pre></li>
+      
+      
+
+      </ul>
+      <ul>
+ <h4>Multimedia Elements</h4>
+      <li></span><pre><code><audio></audio></code></pre></li>
+      <li><pre><code><video></video></code></pre></li>
+      
+      
+
+      </ul>
+
+    </section> 
+
+    
+    <section>
+         <p><img src="resources/newelements.png"></p>
+            
+         
+        </section>
+    <section>
+          
+          <p><img src="resources/new22.jpg"></p>
+        </section><section>
+          
+          
+     <ul> <h4>HTML5 comes with a lot of flexibility and supports the following:</h4><li>  <span class="bullet"></span>Uppercase tag names.<li>
+<li><span class="bullet"></span>Quotes are optional for attributes.</li>
+<li><span class="bullet"></span>Attribute values are optional.</li>
+<li><span class="bullet"></span>Closing empty elements are optional.</li></ul>
+
+        </section>
+        <section>
+          
+          
+     <ul> <h4>HTML 'canvas' and 
+    ' SVG' Element</h4>
+<li><span class="bullet"></span>It is a container for canvas graphics.</li>
+<li><span class="bullet"></span>An HTML canvas is a rectangular area on an HTML page.</li>
+<li><span class="bullet"></span>Canvas has several methods for drawing paths, boxes, circles, text, and graphic images.</li>
+<li><span class="bullet"></span>svg stands for Scalable Vector Graphics</li>
+<li><span class="bullet"></span>svg is used to define graphics for the Web</li>
+<li><span class="bullet"></span>svg element is a container for SVG graphics.</li></ul>
+<pre><code><canvas></canvas>,<svg></svg></code></pre>
+
+        </section>
+        
+    <section>
+          <h1>THANK YOU</h1>
+         
+        </section>
+  </div>
+    </div>
+<script src="lib/js/head.min.js"></script> 
+<script src="js/reveal.min.js"></script> 
+<script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>

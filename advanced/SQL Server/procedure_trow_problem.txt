@@ -1,0 +1,14 @@
+
+   create procedure p6 @id [int]
+   as
+   begin
+   BEGIN TRY
+   select * from  [AdventureWorks2016CTP3].[Sales].[CustomerPII] where [CustomerID]=@id
+   END TRY
+   BEGIN CATCH
+THROW  999,'Enter correct ID',1;
+   END CATCH
+   end
+   go
+  
+  EXEC p6 'arjun'

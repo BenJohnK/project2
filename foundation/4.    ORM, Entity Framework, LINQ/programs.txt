@@ -1,0 +1,114 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace DataFirstTest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //User newUser = new User();
+            //newUser.name = "jadeer";
+            //newUser.phone = "9895212";
+            //newUser.address = "kannur";
+
+            //Test_DataDbContext db = new Test_DataDbContext();
+            //db.Users.Add(newUser);
+            //db.SaveChanges();
+
+
+
+
+
+            //Test_DataDbContext db = new Test_DataDbContext();
+            //var user = db.Users.Where(x=>x.name=="abhilash").FirstOrDefault();
+            //Console.WriteLine(user.ID);
+
+
+            //Test_DataDbContext db = new Test_DataDbContext();
+            //User user = db.Users.Where(x => x.name == "abhilash").FirstOrDefault();
+            //user.name = "dani";
+            //db.SaveChanges();
+
+            //Test_DataDbContext db = new Test_DataDbContext();
+            //User user = db.Users.Where(x => x.name == "dani").FirstOrDefault();
+            //db.Users.Remove(user);
+            //db.SaveChanges();
+
+            //Test_DataDbContext db = new Test_DataDbContext();
+            //List<User> user = db.Users.ToList ();
+            //foreach (var item in user)
+            //{
+            //    Console.WriteLine(item.name);
+            //}
+
+
+            //Test_DataDbContext db = new Test_DataDbContext();
+            //var curUsers = (from user in db.Users
+            //                 where user.name == "abhilash"
+            //                 select user);
+
+            //List<string> s = new List<string>();
+            //s.Add("jadeer");
+            //s.Add("ravi");
+            //foreach(var item in s)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //s.Reverse();
+
+            //foreach (var item in s)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+             Test_DataDbContext db = new Test_DataDbContext();
+
+             var curUsers = from user in db.Users
+                             // where user.name == "dani"
+                             orderby user.ID descending
+                             select user;
+
+             foreach (var item in curUsers)
+             {
+                 Console.WriteLine(item.name);
+             }
+
+            Console.WriteLine("New user updated");
+
+
+
+            User curUsers = (from user in db.Users
+                             join a in db.Users on user.ID equals a.ID
+                             where user.name == "abhilash"
+                             orderby user.ID descending
+                             select user).
+                           
+            Console.Read();
+        }
+    }
+}
+
+
+
+ <add name="DefaultConnection" providerName="System.Data.SqlClient" connectionString="data source=SUYPC185\SQLEXPRESS;initial catalog=School;persist security info=True;user id=sa;password=tiger; App=EntityFramework" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

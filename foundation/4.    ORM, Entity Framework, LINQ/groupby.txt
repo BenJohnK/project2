@@ -1,0 +1,1 @@
+from p in objGroupBy.tblHotels group p by p.hname into g select new { hotels = g.Max(x=>x.income)  };

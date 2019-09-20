@@ -1,0 +1,28 @@
+********Business Logic Method********
+public decimal ConvertCurrency(string currencyCode, decimal value)
+        {
+          decimal currencyValue = calculationRespository.GetCurrencyValue(currencyCode);
+          //Business Logic implemented here.
+          return currencyValue * value;          
+        }
+
+ ******Repository Method********
+ public decimal GetCurrencyValue(string currencyCode)
+        {
+            decimal CurrencyValue = accountsContext.Currencies.Where(p => p.CurrencyCode == currencyCode).SingleOrDefault().INRRate;
+            return CurrencyValue;
+        }
+
+*********Test Class Method**************
+ [TestMethod]
+        public void ConvertCurrency_Success()
+        {
+           // //Arrange
+           // Calculation calculation = new Calculation();
+
+           // //Act
+           //decimal convertedValue= calculation.ConvertCurrency("USD", 2);
+
+           // //Assert
+           // Assert.AreEqual(140, convertedValue);
+        }

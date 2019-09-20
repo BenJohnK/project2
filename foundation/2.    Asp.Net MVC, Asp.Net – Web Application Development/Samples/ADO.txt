@@ -1,0 +1,20 @@
+				try  
+                {  
+                    string connectionString = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;  
+                    string selectSQL = "SELECT * FROM tblEmployees1";  
+                    SqlConnection con = new SqlConnection(connectionString);  
+                    SqlCommand cmd = new SqlCommand(selectSQL, con);  
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);  
+                    DataSet ds = new DataSet();  
+                    adapter.Fill(ds, "Employees");                  
+                    GridView1.DataSource = ds;  
+                    GridView1.DataBind();  
+                }  
+                catch (Exception ex)  
+                {  
+                    // Log the exception                      
+                    Label1.Text = "Something Bad happened, Please contact Administrator!!!!";  
+                }  
+                finally  
+                {  
+                }  

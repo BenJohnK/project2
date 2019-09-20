@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 canvas</title>
+</head>
+<body>
+<div style="width: 400px; height: auto; float: left;">
+<canvas id="Mycanvas" width="300px" height="150px" style="border:1px solid #000"> </canvas>
+
+<br/>
+<canvas id="Mycanvas2" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<br/>
+
+
+<canvas id="Mycanvas3" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<br/>
+<canvas id="Mycanvas4" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<br/>
+<canvas id="Mycanvas5" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<br/>
+<canvas id="Mycanvas6" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+<canvas id="Mycanvas7" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script type="text/javascript">	
+/*var c = document.getElementById("Mycanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();*/
+
+var c = document.getElementById("Mycanvas");
+
+/*------circle-------------*/
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(50, 50, 20,0,2*Math.PI );
+ctx.stroke();
+/*------circle-end-------------*/
+
+/*------Shape using circle-end-------------*/
+
+
+var ctx2 = c.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(75, 75, 75, 0, .5*Math.PI);
+ctx2.stroke();
+
+var ctx1 = c.getContext("2d");
+ctx1.beginPath();
+ctx1.arc(225, 75, 75,1.5,Math.PI );
+ctx1.stroke();
+/*------Shape using circle-end-------------*/
+
+
+/*-------lines-----------*/
+
+var c = document.getElementById("Mycanvas2");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(300,150);
+ctx.strokeStyle = '#ff0000';
+ctx.stroke();
+
+/*----lines-end----------*/
+/*-----canvas text-------*/
+var c = document.getElementById("Mycanvas3");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillStyle = "red";
+ctx.fillText("Hello World",75,75);
+
+
+/*-----canvas text-end---*/
+
+/*-----canvas text-stroke-------*/
+var c = document.getElementById("Mycanvas4");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeStyle = "red";
+ctx.strokeText("Hello World",75,75);
+
+
+/*-----canvas text-stroke-end-------*/
+
+/*---linear gradient---------------*/
+
+
+var c = document.getElementById("Mycanvas5");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"red");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,190,90);
+/*---linear gradient-end---------------*/
+
+/*--radial Gradient--------------------*/
+var c = document.getElementById("Mycanvas6");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"red");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,190,90);
+/*---radial gradient-end---*/
+
+
+/*--radial Gradient--------------------*/
+var c = document.getElementById("Mycanvas7");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"red");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,190,90);
+/*---radial gradient-end---*/
+</script>
+</body>
+</html>

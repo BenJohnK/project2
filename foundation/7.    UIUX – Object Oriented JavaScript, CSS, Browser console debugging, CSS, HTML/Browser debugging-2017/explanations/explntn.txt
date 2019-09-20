@@ -1,0 +1,32 @@
+1.Definition and Usage
+	The <!DOCTYPE> declaration must be the very first thing in your HTML document, before the <html> tag.
+
+	The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+
+	In HTML 4.01, the <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML. The DTD specifies the rules for the 	markup language, so that the browsers render the content correctly.
+
+	HTML5 is not based on SGML, and therefore does not require a reference to a DTD.
+
+	Tip: Always add the <!DOCTYPE> declaration to your HTML documents, so that the browser knows what type of document to expect.
+
+2.The DOCTYPE declaration defines the document type to be HTML
+The text between <html> and </html> describes an HTML document
+The text between <head> and </head> provides information about the document
+The text between <title> and </title> provides a title for the document
+The text between <body> and </body> describes the visible page content
+The text between <h1> and </h1> describes a heading
+The text between <p> and </p> describes a paragraph
+
+
+3.Definition and Usage
+
+The value attribute specifies the value of an <input> element.
+
+The value attribute is used differently for different input types:
+
+For "button", "reset", and "submit" - it defines the text on the button
+For "text", "password", and "hidden" - it defines the initial (default) value of the input field
+For "checkbox", "radio", "image" - it defines the value associated with the input (this is also the value that is sent on submit)
+Note: The value attribute is required with <input type="checkbox"> and <input type="radio">.
+
+Note: The value attribute cannot be used with <input type="file">.
